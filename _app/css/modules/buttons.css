@@ -1,0 +1,9 @@
+.header__button {
+	color: var(--text-color);
+	font-size: 0.9rem;
+	font-weight: 700;
+}
+
+.header__button:hover {
+	color: var(--primary-color);
+}
