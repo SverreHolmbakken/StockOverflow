@@ -1,9 +1,23 @@
-.header__button {
+.transparent-button {
 	color: var(--text-color);
 	font-size: 0.9rem;
 	font-weight: 700;
+	margin: 0.35rem 1.15rem;
 }
 
-.header__button:hover {
+.transparent-button:hover {
 	color: var(--primary-color);
+}
+
+.primary-button__large {
+	color: white;
+	font-size: 1.25rem;
+	font-weight: 700;
+	background: var(--primary-color);
+	border-radius: 6px;
+	padding: 0.35rem 1.15rem;
+}
+
+.primary-button__large:hover {
+	background: var(--primary-color--hover);
 }
