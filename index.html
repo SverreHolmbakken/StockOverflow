@@ -17,30 +17,40 @@
 				</a>
 				<div class="header__sites">
 					<ul class="header__sites-list">
-						<li><a class="header__button" href="/portfolio">Portfolio</a></li>
-						<li><a class="header__button" href="/blog">Blog</a></li>
+						<li><a class="transparent-button" href="/portfolio">Portfolio</a></li>
+						<li><a class="transparent-button" href="/blog">Blog</a></li>
 					</ul>
 				</div>
 			</div>
 		</header>
 
-		<main>
-			<section class="hero">
-				<div class="hero__info">
-					<h1>Real time stock prices - In your portfolio</h1>
-					<p>For the low low price of $0 your portfolio gets updated - in real time</p>
-					<a href="/portfolio"><button class="primary-button__large">Try now</button></a>
-				</div>
-				<img src="/_app/assets/Pile of money.png" alt="">
-				<div class="hero__background"></div>
-			</section>
-
-			<section class="blog-info">
-				<h1 class="h1">Get investment tips straight from our local AI</h1>
-				<p class="paragraph">In our blog you can educate* yourself with the newest investment tips from our locally farmed AI.</p>
-				<a href="/blog"><button class="primary-button__large">Read now</button></a>
-				<p class="fine-print">*As an AI language model, It cannot provide a specific list of companies to invest in. Investment decisions are based on individual circumstances, goals, and risk tolerance, and it's important to do thorough research and analysis before making any investment decisions. I recommend consulting with a financial advisor or doing your own research to identify companies that align with your investment strategy and goals. Additionally, past performance of companies does not guarantee future results, so it's important to be cautious when selecting specific companies to invest in.</p>
-			</section>
+		<main class="main">
+			<div class="main__inner">
+				<section class="hero">
+					<div class="hero__info">
+						<h1 class="hero__h1 h1">Real time stock prices - In your portfolio</h1>
+						<p class="hero__paragraph paragraph">For the low low price of $0 your portfolio gets updated - in real time</p>
+						<a href="/portfolio">
+							<button class="primary-button__large">Try now</button>
+						</a>
+					</div>
+					<img class="hero__image" src="/_app/assets/Pile of money.png" alt="">
+					<div class="hero__background"></div>
+				</section>
+	
+				<section class="blog-info">
+					<h1 class="blog-info__h1 h1">Get investment tips straight from our local AI</h1>
+					<p class="blog-info__paragraph paragraph">In our blog you can educate* yourself with the newest investment tips from our locally farmed AI.</p>
+					<a href="/blog"><button class="primary-button__large">Read now</button></a>
+					<p class="blog-info__fp fine-print">*As an AI language model, It cannot provide a specific list of companies to invest in. Investment decisions are based on individual circumstances, goals, and risk tolerance, and it's important to do thorough research and analysis before making any investment decisions. We recommend consulting with a financial advisor or doing your own research to identify companies that align with your investment strategy and goals. Additionally, past performance of companies does not guarantee future results, so it's important to be cautious when selecting specific companies to invest in.</p>
+				</section>
+			</div>
 		</main>
+
+		<div class="homepage-background">
+			<div class="background__hero"></div>
+			<div class="background__transition"></div>
+			<div class="background__blog-info"></div>
+		</div>
 	</body>
 </html>
