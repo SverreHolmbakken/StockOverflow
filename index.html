@@ -13,16 +13,29 @@
 		<header class="header">
 			<div class="header__inner">
 				<a href="/">
-					<img src="./_app/assets/StockOverflowLogo.svg" alt="">
+					<img class="header__logo" src="./_app/assets/StockOverflowLogo.svg" alt="Logo">
 				</a>
-				<div class="header__sites">
+				<nav class="header__sites">
 					<ul class="header__sites-list">
 						<li><a class="transparent-button" href="/portfolio">Portfolio</a></li>
 						<li><a class="transparent-button" href="/blog">Blog</a></li>
 					</ul>
-				</div>
+				</nav>
+
+				<button class="header__mobile-navigation-button">
+					<div class="header__movile-navigation-lines"></div>
+					<div class="header__movile-navigation-lines"></div>
+					<div class="header__movile-navigation-lines"></div>
+				</button>
 			</div>
 		</header>
+
+		<div class="header__mobile-navigation">
+			<ul class="header__mobile-navigation-list">
+				<li><a class="transparent-button__mobile" href="/portfolio">Portfolio</a></li>
+				<li><a class="transparent-button__mobile" href="/blog">Blog</a></li>
+			</ul>
+		</div>
 
 		<main class="main">
 			<div class="main__inner">
