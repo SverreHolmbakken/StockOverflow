@@ -9,6 +9,10 @@
 	color: var(--primary-color);
 }
 
+.header__current-page {
+	color: var(--primary-color);
+}
+
 .primary-button__large {
 	color: white;
 	font-size: 1.25rem;
@@ -20,6 +24,16 @@
 
 .primary-button__large:hover {
 	background: var(--primary-color--hover);
+}
+
+
+.primary-button__small {
+	color: white;
+	font-size: 0.6rem;
+	font-weight: 700;
+	background: var(--primary-color);
+	border-radius: 6px;
+	padding: 0.35rem 1.15rem;
 }
 
 .transparent-button__mobile {

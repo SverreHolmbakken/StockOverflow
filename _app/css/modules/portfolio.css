@@ -1,0 +1,45 @@
+.portfolio {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.portfolio__market-value-container {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.portfolio__total-gain-row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.portfolio__divider-line {
+	width: 100%;
+	border-top: 1px solid black;
+}
+
+.portfolio__total-gain-container {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+}
+
+.portfolio__table {
+	table-layout: fixed;
+}
+
+table {
+	border-collapse: collapse;
+	table-layout: fixed;
+	width: 100%;
+}
+
+tbody>tr {
+	border-bottom: 1px solid black;
+}
+
+td {
+	padding: 0.4rem 0;
+}
