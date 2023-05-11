@@ -19,49 +19,6 @@ body {
 	padding: 0 1.9rem;
 }
 
-/* Default settings */
-.h1 {
-	font-size: 2rem;
-	font-weight: 600;
-}
-
-.h2 {
-	font-size: 1.2rem;
-	font-weight: 500;
-}
-
-.h2-bold {
-	font-size: 1.4rem;
-	font-weight: 600;
-}
-
-.paragraph {
-	font-size: 1.25rem;
-}
-
-.fine-print {
-	font-size: 0.5rem;
-}
-
-.legend {
-	font-size: 0.7rem;
-	font-weight: 400;
-}
-
-.stock-info {
-	font-size: 0.8rem;
-	font-weight: 600;
-}
-
-.stock-name {
-	font-size: 0.6rem;
-	font-weight: 400;
-}
-
-.link-button {
-	width:fit-content;
-}
-
 /* Hero styling */
 .hero {
 	position: relative;
@@ -164,9 +121,6 @@ body {
 
 	.blog__info {
 		width: auto;
-	}
-
-	.background__hero {
 	}
 
 	.background__transition {
