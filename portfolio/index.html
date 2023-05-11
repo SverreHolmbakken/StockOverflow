@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Stock Overflow</title>
+		
+		<link rel="stylesheet" href="/_app/css/main.css">
+		<script type="module" src="/_app/js/main.js"></script>
+	</head>
+	
+	<body>
+		<header class="header">
+			<div class="header__inner">
+				<a href="/">
+					<img class="header__logo" src="/_app/assets/StockOverflowLogo.svg" alt="Logo">
+				</a>
+				<div class="header__sites">
+					<ul class="header__sites-list">
+						<li><a class="header__current-page transparent-button" href="/portfolio">Portfolio</a></li>
+						<li><a class="transparent-button" href="/blog">Blog</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+
+		<main class="main">
+			<div class="main__inner">
+				<section class="portfolio">
+					<div class="portfolio__title">
+						<h1 class="h1">Portfolio</h1>
+					</div>
+
+					<div class="portfolio__market-value-container">
+						<h2 class="h2">Market Value</h2>
+						<h2 class="h2-bold">$6,430.5</h2>
+					</div>
+
+					<div class="portfolio__total-gain-row">
+						<div class="portfolio__total-gain-container">
+							<h2 class="h2">Total Gain</h2>
+							<h2 class="h2">+354.4 (4.5%)</h2>
+						</div>
+
+						<button class="primary-button__large">Add stock</button>
+					</div>
+
+					<div class="portfolio__divider-line"></div>
+
+					<table class="portfolio__table">
+						<thead>
+							<tr>
+								<th align="left" class="legend">Symbol</th>
+								<th align="left" class="legend">Price</th>
+								<th align="left" class="legend">Change %</th>
+								<th align="left" class="legend">Shares</th>
+								<th align="left" class="legend">Cost / Share</th>
+								<th align="left" class="legend">Market Value</th>
+								<th align="left" class="legend">Total Gain</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<div class="portfolio__symbol-name">
+										<p class="stock-info">AAPL</p>
+										<!-- <p class="stock-name">Apple Inc.</p> -->
+									</div>
+								</td>
+								<td class="stock-info">165.23</td>
+								<td class="stock-info">+1.26%</td>
+								<td class="stock-info">30</td>
+								<td class="stock-info">221.6</td>
+								<td class="stock-info">3,304.60</td>
+								<td class="stock-info">-340.6 (4.5%)</td>
+								<td class="stock-info"><button class="primary-button__small">Edit</button></td>
+							</tr>
+
+							<tr>
+								<td>
+									<div class="portfolio__symbol-name">
+										<p class="stock-info">AAPL</p>
+										<!-- <p class="stock-name">Apple Inc.</p> -->
+									</div>
+								</td>
+								<td class="stock-info">165.23</td>
+								<td class="stock-info">+1.26%</td>
+								<td class="stock-info">30</td>
+								<td class="stock-info">221.6</td>
+								<td class="stock-info">3,304.60</td>
+								<td class="stock-info">-340.6 (4.5%)</td>
+								<td class="stock-info"><button class="primary-button__small">Edit</button></td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+			</div>
+		</main>
+	</body>
+</html>

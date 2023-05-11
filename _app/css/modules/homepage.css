@@ -22,6 +22,17 @@ body {
 /* Default settings */
 .h1 {
 	font-size: 2rem;
+	font-weight: 600;
+}
+
+.h2 {
+	font-size: 1.2rem;
+	font-weight: 500;
+}
+
+.h2-bold {
+	font-size: 1.4rem;
+	font-weight: 600;
 }
 
 .paragraph {
@@ -30,6 +41,21 @@ body {
 
 .fine-print {
 	font-size: 0.5rem;
+}
+
+.legend {
+	font-size: 0.7rem;
+	font-weight: 400;
+}
+
+.stock-info {
+	font-size: 0.8rem;
+	font-weight: 600;
+}
+
+.stock-name {
+	font-size: 0.6rem;
+	font-weight: 400;
 }
 
 .link-button {
