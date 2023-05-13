@@ -78,3 +78,12 @@
 .tag-button:hover {
 	background-color: var(--tag-button-hover-color);
 }
+
+.primary-button__small {
+	color: white;
+	font-size: 0.6rem;
+	font-weight: 700;
+	background: var(--primary-color);
+	border-radius: 6px;
+	padding: 0.35rem 1.15rem;
+}
