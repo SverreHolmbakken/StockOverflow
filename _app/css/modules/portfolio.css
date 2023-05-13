@@ -43,3 +43,8 @@ tbody>tr {
 td {
 	padding: 0.4rem 0;
 }
+
+.edit-button {
+	display: flex;
+	justify-content: end;
+}
