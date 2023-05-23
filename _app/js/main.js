@@ -1,7 +1,11 @@
-// Portfolio commented to keep it from fetching Stock prices from homepage
-
-// import portfolio from "./modules/portfolio.js";
 import header from "./modules/header.js";
+import portfolioCopy from "./modules/portfolio.js";
 
-// portfolio();
+const portfolioSection = document.querySelector('.portfolio');
+
+if (portfolioSection) {
+	// portfolio()
+	portfolioCopy()
+}
+
 header();
