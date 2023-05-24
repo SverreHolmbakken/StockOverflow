@@ -7,7 +7,9 @@ export default function header() {
 	const navigationButton = document.querySelector('.header__mobile-navigation-button');
 
 	//event listeners
-	navigationButton.addEventListener('click', handleOpenNavigation)
+	if (navigationButton) {
+		navigationButton.addEventListener('click', handleOpenNavigation)
+	}
 
 	//event handlers
 	function handleOpenNavigation() {
