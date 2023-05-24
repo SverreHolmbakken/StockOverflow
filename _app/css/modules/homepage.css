@@ -40,6 +40,7 @@ body {
 
 .hero__image {
 	position: absolute;
+	width: unset;
 	top: 3rem;
 	right: 2rem;
 	animation: float 6s ease-in-out infinite;
