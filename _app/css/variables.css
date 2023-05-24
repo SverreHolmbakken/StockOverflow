@@ -2,7 +2,10 @@
 	--primary-color: #032DFF;
 	--primary-color--hover: #0026E3;
 	--text-color: #2E2C2F;
+	--text-color-hover: #555555;
 	--hero-background-color: #5EFC8D;
 	--profit-color: #2DA700;
 	--loss-color: #A71400;
+	--tag-button-color: #E9E9E9;
+	--tag-button-hover-color: #D2D2D2;
 }
