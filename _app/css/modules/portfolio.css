@@ -4,6 +4,11 @@
 	gap: 0.5rem;
 }
 
+.portfolio__title {
+	display: flex;
+	justify-content: space-between;
+}
+
 .portfolio__market-value-container {
 	display: flex;
 	align-items: center;
@@ -42,4 +47,18 @@ tbody>tr {
 
 td {
 	padding: 0.4rem 0;
+}
+
+.edit-button {
+	display: flex;
+	justify-content: end;
+}
+
+.portfolio__spinner {
+	height: 7rem;
+}
+
+.add-stock-reminder__text {
+	display: flex;
+	justify-content: center;
 }
