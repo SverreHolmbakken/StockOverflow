@@ -1,14 +1,16 @@
+import { displayLoading } from "../util/loading-spinner.js";
 import fetchStockAPI from "./fetchStockAPI.js";
 import stockDialog from "./stockDialog.js";
 
 const portfolioGainRow = document.querySelector('.portfolio__total-gain-row');
 const localData = localStorage.getItem('stockList');
 const portfolioSection = document.querySelector('.portfolio');
-const portfolioSpinner = document.createElement('img');
+// const testSection = document.querySelector('.portfolio');
 
 let spinner = true;
 export default function portfolio() {
-	displayLoading()
+	// displayLoading(portfolioSection)
+	displayLoading(portfolioSection)
 	console.log(spinner)
 	
 	
@@ -40,17 +42,3 @@ export default function portfolio() {
 		portfolioSection.append(noLocalStorageText)
 	}
 }
-
-function displayLoading() {
-	portfolioSpinner.className = 'portfolio__spinner'
-	
-	portfolioSpinner.src = "../_app/assets/icons/loader.svg"
-	
-	portfolioSection.append(portfolioSpinner)
-}
-
-function hideLoading() {
-	portfolioSpinner.remove()
-}
-
-export { hideLoading }

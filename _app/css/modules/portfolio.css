@@ -54,10 +54,6 @@ td {
 	justify-content: end;
 }
 
-.portfolio__spinner {
-	height: 7rem;
-}
-
 .add-stock-reminder__text {
 	display: flex;
 	justify-content: center;

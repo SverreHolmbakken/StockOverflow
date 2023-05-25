@@ -1,9 +1,11 @@
 import { sanity } from "../sanity.js";
+import { displayLoading, hideLoading } from "../util/loading-spinner.js";
 import { readURL } from "../util/read-url.js";
 
 export default function renderArticlePage() {
 	const slug = readURL();
 
+	
 	let articles = [];
 
 	async function fetchArticleContent() {
@@ -26,20 +28,18 @@ export default function renderArticlePage() {
 	async function setCurrentArticle() {
 		articles = await fetchArticleContent()
 	}
-
+	
 	async function initialize() {
 		await setCurrentArticle();
 		renderHTML();
 	}
-
+	
 	function renderHTML() {
 		const articlePage = document.querySelector('.article');
-		console.log(articles)
 		articles.forEach(article => {
 			const articleCreateDate = new Date(article._createdAt);
 			const dateOptions = { year: 'numeric', month: 'long', day: 'numeric'}
 
-			const articleContent = document.createElement('div');
 			const articleImage = document.createElement('img');
 			const articleTitle = document.createElement('h1');
 			const articleByline = document.createElement('p');

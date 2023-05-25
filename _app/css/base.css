@@ -57,3 +57,7 @@ body {
 .link-button {
 	width:fit-content;
 }
+
+.loading-spinner {
+	height: 7rem;
+}

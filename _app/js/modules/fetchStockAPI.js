@@ -1,5 +1,5 @@
 import { API_KEY } from "../env.js";
-import { hideLoading } from "./portfolio.js";
+import { hideLoading } from "../util/loading-spinner.js";
 
 const userData = JSON.parse(localStorage.getItem('stockList'));
 console.log(userData)
@@ -90,7 +90,7 @@ function renderHTML(APIOutput) {
 	userData.forEach(localData => {
 		marketValueTotal += Number(localData.quantity * APIOutput.price)
 	})
-	marketValueText.innerText = `$${Math.ceil(marketValueTotal)}`;
+	marketValueText.innerText = marketValueTotal.toFixed(2);
 
 	if (userData) {
 		userData.forEach(localData => {
