@@ -34,6 +34,7 @@ export default function stockDialog() {
 		addStockDialog.close();
 	}
 
+	// This function sets the values of the input fields in local storage
 	function setStockValuesInLocalStorage() {
 		const stockTickerInputValue = stockTickerInput.value.toUpperCase();
 		const quantityInputValue = quantityInput.value;
