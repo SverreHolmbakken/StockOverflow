@@ -1,20 +1,13 @@
-import { displayLoading } from "../util/loading-spinner.js";
+import { displayLoading, hideLoading } from "../util/loading-spinner.js";
 import fetchStockAPI from "./fetchStockAPI.js";
 import stockDialog from "./stockDialog.js";
 
 const portfolioGainRow = document.querySelector('.portfolio__total-gain-row');
 const localData = localStorage.getItem('stockList');
 const portfolioSection = document.querySelector('.portfolio');
-// const testSection = document.querySelector('.portfolio');
 
-let spinner = true;
 export default function portfolio() {
-	// displayLoading(portfolioSection)
-	displayLoading(portfolioSection)
-	console.log(spinner)
-	
-	
-	fetchStockAPI();
+	displayLoading(portfolioSection);
 	stockDialog();
 	
 	if (localData) {
@@ -32,8 +25,10 @@ export default function portfolio() {
 			console.log('clear localstorage')
 			location.reload()
 		}
+		
 	} else {
 		const noLocalStorageText = document.createElement('h2');
+		hideLoading(portfolioSection);
 		
 		noLocalStorageText.innerText = `Click 'Add stock' to start your journey`;
 		
