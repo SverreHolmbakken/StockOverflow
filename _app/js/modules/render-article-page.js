@@ -1,11 +1,9 @@
 import { sanity } from "../sanity.js";
-import { displayLoading, hideLoading } from "../util/loading-spinner.js";
 import { readURL } from "../util/read-url.js";
 
 export default function renderArticlePage() {
 	const slug = readURL();
 
-	
 	let articles = [];
 
 	async function fetchArticleContent() {
@@ -39,7 +37,6 @@ export default function renderArticlePage() {
 		articles.forEach(article => {
 			const articleCreateDate = new Date(article._createdAt);
 			const dateOptions = { year: 'numeric', month: 'long', day: 'numeric'}
-
 			const articleImage = document.createElement('img');
 			const articleTitle = document.createElement('h1');
 			const articleByline = document.createElement('p');
@@ -60,9 +57,10 @@ export default function renderArticlePage() {
 			})
 
 			article.tags.forEach(element => {
-				const tagElement = document.createElement('button');
+				const tagElement = document.createElement('a');
 				tagElement.innerText = element.name;
-				tagElement.className = 'tag-button'
+				tagElement.className = 'tag-button';
+				tagElement.href = `/tags/${element.slug.current}`;
 
 				tagsListContainer.append(tagElement)
 			})
@@ -71,7 +69,6 @@ export default function renderArticlePage() {
 			articleTitle.innerText = article.title;
 			articleByline.innerText = `${articleCreateDate.toLocaleDateString('no-NO', dateOptions)} ● Written by ${article.author.name}`
 			tagTiltle.innerText = 'Tags'
-
 			
 			articleTitle.className = 'article__title h1';
 			articleImage.className = 'article__image';
