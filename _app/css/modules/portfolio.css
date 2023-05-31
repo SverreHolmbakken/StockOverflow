@@ -49,7 +49,7 @@ td {
 	padding: 0.4rem 0;
 }
 
-.edit-button {
+.stock__edit-button-container {
 	display: flex;
 	justify-content: end;
 }
@@ -57,4 +57,64 @@ td {
 .add-stock-reminder__text {
 	display: flex;
 	justify-content: center;
+}
+
+.stock__total-gain-number--positive {
+	color: var(--color-profit);
+}
+
+.stock__total-gain-number--negative {
+	color: var(--color-loss);
+}
+
+.stock__total-gain-number--neutral {
+	color: black;
+}
+
+.stock__total-gain-number--positive::before {
+	content: '+';
+}
+
+.stock__total-gain-number--neutral::before {
+	content: '';
+}
+
+.stock__total-gain-percent--positive {
+	color: var(--color-profit);
+}
+
+.stock__total-gain-percent--negative {
+	color: var(--color-loss);
+}
+
+.stock__total-gain-percent--neutral {
+	color: var(--color-text);
+}
+
+.stock__total-gain-percent--positive::before {
+	content: '(+';
+}
+
+.stock__total-gain-percent--neutral::before {
+	content: '(';
+}
+
+.stock__total-gain-percent--negative::before {
+	content: '(';
+}
+
+.stock__total-gain-percent--neutral::after {
+	content: '%)';
+}
+
+.stock__total-gain-percent--positive::after {
+	content: '%)';
+}
+
+.stock__total-gain-percent--negative::after {
+	content: '%)';
+}
+
+@media screen and (max-width: 550px) {
+	
 }

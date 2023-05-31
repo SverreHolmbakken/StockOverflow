@@ -1,5 +1,5 @@
 .transparent-button {
-	color: var(--text-color);
+	color: var(--color-text);
 	font-size: 0.9rem;
 	font-weight: 700;
 	margin: 0.35rem 1.15rem;
@@ -46,7 +46,7 @@
 }
 
 .transparent-button__mobile {
-	color: var(--text-color);
+	color: var(--color-text);
 	font-size: 2rem;
 	font-weight: 700;
 	margin: 0.35rem 1.15rem;
@@ -57,7 +57,7 @@
 }
 
 .remove-button {
-	background-color: var(--loss-color);
+	background-color: var(--color-loss);
 }
 
 .tag-button {
@@ -68,4 +68,15 @@
 
 .tag-button:hover {
 	background-color: var(--tag-button-hover-color);
+}
+
+.stock__edit-button:hover {
+	cursor: not-allowed;
+}
+
+@media screen and (max-width: 550px) {
+	.primary-button__large {
+		font-size: 0.9rem;
+		padding: 0.35rem 1.15rem;
+	}
 }

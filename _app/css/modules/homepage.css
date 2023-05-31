@@ -104,7 +104,8 @@ body {
 	}
 	
 	.main__inner {
-		padding: 1rem 2rem 1rem 0.9rem;
+		padding: 1rem 0.6rem 1rem 0.6rem;
+		width: 100%;
 	}
 
 	.hero {

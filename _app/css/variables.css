@@ -1,11 +1,11 @@
 :root {
 	--primary-color: #032DFF;
 	--primary-color--hover: #0026E3;
-	--text-color: #2E2C2F;
-	--text-color-hover: #555555;
+	--color-text: #2E2C2F;
+	--color-text-hover: #555555;
 	--hero-background-color: #5EFC8D;
-	--profit-color: #2DA700;
-	--loss-color: #A71400;
+	--color-profit: #2DA700;
+	--color-loss: #A71400;
 	--tag-button-color: #E9E9E9;
 	--tag-button-hover-color: #D2D2D2;
 }
