@@ -35,7 +35,7 @@ export default async function getArticleList() {
 
 			articleImage.src = article.image;
 			articleTitle.innerText = article.title;
-			articleItem.href = `/blog/article/?${article.slug}`
+			articleItem.href = `/blog/article/?${article.slug}`;
 		
 			articleItem.append(
 				articleImage,

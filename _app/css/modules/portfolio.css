@@ -115,6 +115,21 @@ td {
 	content: '%)';
 }
 
+.error-text {
+	margin: auto;
+}
+
+.mobile__table-row {
+	border-bottom: unset;
+}
+
 @media screen and (max-width: 550px) {
-	
+	.portfolio__thead {
+		display: none;
+	}
+
+	/* Make this table data field 100% */
+	.stock__total-gain {
+		width: 100%;
+	}
 }

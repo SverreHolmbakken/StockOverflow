@@ -46,12 +46,6 @@ body {
 	animation: float 6s ease-in-out infinite;
 }
 
-@media screen and (max-width: 920px) {
-	.hero__image {
-		display: none;
-	}
-}
-
 /* Blog-info styling */
 .blog-info {
 	display: flex;
@@ -97,6 +91,11 @@ body {
 
 
 /* Media queries */
+@media screen and (max-width: 920px) {
+	.hero__image {
+		display: none;
+	}
+}
 
 @media screen and (max-width: 550px) {
 	.main {

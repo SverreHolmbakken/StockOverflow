@@ -1,5 +1,5 @@
 import { displayLoading, hideLoading } from "../util/loading-spinner.js";
-import fetchStockAPI from "./fetchStockAPI.js";
+import listStocks from "./list-stocks.js";
 import stockDialog from "./stockDialog.js";
 
 const portfolioGainRow = document.querySelector('.portfolio__total-gain-row');
@@ -9,6 +9,7 @@ const portfolioSection = document.querySelector('.portfolio');
 export default function portfolio() {
 	displayLoading(portfolioSection);
 	stockDialog();
+	listStocks();
 	
 	if (localData) {
 		const clearLocalStorageButton = document.createElement('button');
